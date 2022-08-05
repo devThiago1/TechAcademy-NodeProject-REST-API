@@ -1,20 +1,22 @@
 {
-  "name": "TechAcademy-NodeProject",
+  "name": "techacademy-nodeproject",
   "version": "1.0.0",
+  "description": "",
   "main": "src/app.js",
-  "repository": "https://github.com/devThiago1/TechAcademy-NodeProject.git",
-  "author": "devThiago1 <thiago.calmon4@gmail.com>",
-  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
   "dependencies": {
     "express": "^4.18.1"
   },
-  "devDependencies": {
-      "nodemon": "^1.17.3"
-},
- "scripts": {
-      "start": "nodemon ./bin/server.js" 
- }
-
- 
+  "scripts": {
+    "start": "nodemon ./bin/server.js"
+  },
+  "repository": "git+https://github.com/devThiago1/TechAcademy-NodeProject.git",
+  "author": "devThiago1 <thiago.calmon4@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devThiago1/TechAcademy-NodeProject/issues"
+  },
+  "homepage": "https://github.com/devThiago1/TechAcademy-NodeProject#readme"
 }
-
