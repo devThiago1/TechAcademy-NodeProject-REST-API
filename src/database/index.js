@@ -8,7 +8,7 @@ const connectToMySql = async () => {
         host: "127.0.0.1",
         user: "root",
         password: "Leao1899*",
-        database: "tech-academy"
+        database: "tech_academy"
     }
     
     const connection = await mysql.createConnection(config);
