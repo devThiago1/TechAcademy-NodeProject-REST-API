@@ -26,6 +26,24 @@ class StudentRepository {
 
       return student;
     }
+
+    async update(ra, studentData) {
+      const conn = await db.connectToMySql();
+      const query = "UPDATE student SET nome = ?, data_nascimento = ? WHERE ra = ?";
+      const [student] = await conn.query(query, [
+        studentData.nome,
+        studentData.data_nascimento,
+        ra
+      ]);
+
+      return student;
+    }
+
+    async delete(ra) {
+      const conn = await db.connectToMySql();
+      const query = "DELETE FROM student WHERE ra = ?";
+      await conn.query(query, [ra]);
+    }
   }
   
   module.exports = StudentRepository;

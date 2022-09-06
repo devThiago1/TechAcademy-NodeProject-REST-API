@@ -16,6 +16,13 @@ class StudentService {
     async createStudent(student) {
         return this.repository.create(student);
     }  
+
+    async updateStudent(ra, student) {
+        return this.repository.update(ra, student);
+    }  
+    async deleteStudent(ra) {
+        return this.repository.delete(ra);
+    }  
 };
 
 module.exports = StudentService;
