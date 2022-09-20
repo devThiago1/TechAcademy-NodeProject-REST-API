@@ -39,7 +39,7 @@ class StudentRepository {
       return student;
     }
 
-    async delete(ra) {
+    async delete(ra){
       const conn = await db.connectToMySql();
       const query = "DELETE FROM student WHERE ra = ?";
       await conn.query(query, [ra]);
